@@ -1,0 +1,607 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 216758199,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Потребителят отваря екрана за работа със задача",
+            "match": {
+              "location": "TaskSteps.openTaskScreen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Създаване на задача",
+        "description": "",
+        "id": "работа-със-задачи;създаване-на-задача",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53299,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Въведе име на задача",
+            "match": {
+              "location": "TaskSteps.insertTaskName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "въведе статус",
+            "match": {
+              "location": "TaskSteps.insertStatus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1197500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "натисне бутона за създаване на задача",
+            "match": {
+              "location": "TaskSteps.clickInsertTaskButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6221700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Вижда съобщение: \"Успешно създаване на задача!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Успешно създаване на задача!",
+                  "offset": 18
+                }
+              ],
+              "location": "TaskSteps.checkMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 118500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Потребителят отваря екрана за работа със задача",
+            "match": {
+              "location": "TaskSteps.openTaskScreen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Създаване на подзадача",
+        "description": "",
+        "id": "работа-със-задачи;създаване-на-подзадача",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Въведе име на подзадача",
+            "match": {
+              "location": "TaskSteps.insertSmallerTaskName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "въведе статус",
+            "match": {
+              "location": "TaskSteps.insertStatus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "натисне бутона за създаване на подзадача",
+            "match": {
+              "location": "TaskSteps.clickInsertSmallerTaskButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Вижда съобщение: \"Успешно създаване на задача!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Успешно създаване на задача!",
+                  "offset": 18
+                }
+              ],
+              "location": "TaskSteps.checkMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 108900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Потребителят отваря екрана за работа със задача",
+            "match": {
+              "location": "TaskSteps.openTaskScreen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 19,
+        "name": "Създаване на подзадача с невалиден статус",
+        "description": "",
+        "id": "работа-със-задачи;създаване-на-подзадача-с-невалиден-статус",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Въведе име на задача",
+            "match": {
+              "location": "TaskSteps.insertTaskName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53101,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "въведе невалиден статус",
+            "match": {
+              "location": "TaskSteps.insertInvalidStatus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 37400,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "натисне бутона за създаване на задача",
+            "match": {
+              "location": "TaskSteps.clickInsertTaskButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81400,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Вижда съобщение: \"Въведете валиден статус!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Въведете валиден статус!",
+                  "offset": 18
+                }
+              ],
+              "location": "TaskSteps.checkMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 115800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Потребителят отваря екрана за работа със задача",
+            "match": {
+              "location": "TaskSteps.openTaskScreen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 25,
+        "name": "Започване на работа по задача",
+        "description": "",
+        "id": "работа-със-задачи;започване-на-работа-по-задача",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 44100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Въведе име на задача",
+            "match": {
+              "location": "TaskSteps.insertTaskName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38399,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "въведе валидно име на разработчик",
+            "match": {
+              "location": "TaskSteps.insertDeveloperName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2079500,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "натисне бутона за започване на работа по задача",
+            "match": {
+              "location": "TaskSteps.clickStartTaskButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Вижда съобщение: \"Успешно започване на работа по задача!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Успешно започване на работа по задача!",
+                  "offset": 18
+                }
+              ],
+              "location": "TaskSteps.checkMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 72899,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Потребителят отваря екрана за работа със задача",
+            "match": {
+              "location": "TaskSteps.openTaskScreen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Започване на работа по задача с невалидно име на разработчик",
+        "description": "",
+        "id": "работа-със-задачи;започване-на-работа-по-задача-с-невалидно-име-на-разработчик",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22900,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Въведе име на задача",
+            "match": {
+              "location": "TaskSteps.insertTaskName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "въведе невалидно име на разработчик",
+            "match": {
+              "location": "TaskSteps.insertInvalidDeveloperName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69701,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "натисне бутона за започване на работа по задача",
+            "match": {
+              "location": "TaskSteps.clickStartTaskButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Вижда съобщение: \"Въведете валидно име на разработчик!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Въведете валидно име на разработчик!",
+                  "offset": 18
+                }
+              ],
+              "location": "TaskSteps.checkMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 128600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Потребителят отваря екрана за работа със задача",
+            "match": {
+              "location": "TaskSteps.openTaskScreen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 37,
+        "name": "Смяна на статус на задача",
+        "description": "",
+        "id": "работа-със-задачи;смяна-на-статус-на-задача",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24400,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Въведе име на задача",
+            "match": {
+              "location": "TaskSteps.insertTaskName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28401,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "въведе статус",
+            "match": {
+              "location": "TaskSteps.insertStatus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "натисне бутона за промяна на статус на задача",
+            "match": {
+              "location": "TaskSteps.clickChangeStatusButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77001,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Вижда съобщение: \"Успешно променихте статуса на задачата!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Успешно променихте статуса на задачата!",
+                  "offset": 18
+                }
+              ],
+              "location": "TaskSteps.checkMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 116200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Потребителят отваря екрана за работа със задача",
+            "match": {
+              "location": "TaskSteps.openTaskScreen()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Смяна на статус на завършена задача",
+        "description": "",
+        "id": "работа-със-задачи;смяна-на-статус-на-завършена-задача",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24100,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Въведе име на задача",
+            "match": {
+              "location": "TaskSteps.insertTaskName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33599,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "въведе статус на завършена задача",
+            "match": {
+              "location": "TaskSteps.changeStatusToFinishedTask()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23601,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "натисне бутона за промяна на статус на задача",
+            "match": {
+              "location": "TaskSteps.clickChangeStatusButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52500,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Вижда съобщение: \"Статусът на завършена задача не може да бъде сменен!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Статусът на завършена задача не може да бъде сменен!",
+                  "offset": 18
+                }
+              ],
+              "location": "TaskSteps.checkMessage(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Работа със задачи",
+    "description": "",
+    "id": "работа-със-задачи",
+    "keyword": "Feature",
+    "uri": "uni/fmi/task/Task.feature"
+  }
+]
